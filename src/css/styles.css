@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --corDestaque: #60bfbf;
+  --corDestaqueClaro: #89d9d9;
+  --corBranca: #f2f2f2;
+  --corCinza: #595959;
+  --corPreta: #0d0d0d;
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  .carrossel {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .slide {
+    flex: 0 0 20%;
+    padding: 10px;
+  }
+  
+  .slide img {
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+  }
+  
+  .slide img:hover {
+    transform: scale(1.1);
+  }
+  
