@@ -4,42 +4,78 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Chamada Código CSS -->
     <link rel="stylesheet" href="./src/css/styles.css" />
+    <!-- Importação das Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="icon" href="./src/img/favicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+    <link rel="icon" href="./src/img/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira&display=swap"
+      rel="stylesheet"
+    />
     <title>FoodSavers - Nutrindo o Futuro</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="./src/pages/fome.html">Fome</a></li>
-          <li><a href="./src/pages/alimentar.html">Insegurança Alimetar</a></li>
+    <!-- Menu / Cabeçalho -->
+
+    <header class="head">
+      <a href="index.html"
+        ><img src="./src/img/logo.png" class="head_logo" alt=""
+      /></a>
+      <nav class="head_nav">
+        <ul class="head_ul">
+          <li class="head_li">
+            <a href="index.html">Home</a>
+          </li>
           <li>
-            <a href="./src/pages/agricultura.html">Agricultura Sustentável</a>
+            <a href="#" onclick="carregarPagina('./src/pages/fome.html')"
+              >Fome</a
+            >
+          </li>
+          <li>
+            <a href="#" onclick="carregarPagina('./src/pages/alimentar.html')"
+              >Insegurança Alimetar</a
+            >
+          </li>
+          <li>
+            <a href="#" onclick="carregarPagina('./src/pages/agricultura.html')"
+              >Agricultura Sustentável</a
+            >
+          </li>
+          <li>
+            <a href="#" onclick="carregarPagina('./src/pages/mvp.html')">MVP</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main>
-      <div>
-        <h1>
+
+    <!-- Conteudo Principal -->
+
+    <main id="conteudo">
+      <!-- A fome e o Desperdicio -->
+
+      <div class="home">
+        <h1 class="home_h">
           A fome e o desperdício de alimentos atingem proporções alarmantes em
           nosso mundo
         </h1>
-        <p>
+        <p class="home_p">
           A problemática se agrava quando percebemos que aproximadamente 33% de
           toda a produção global de alimentos é perdida ou desperdiçada a cada
           ano. Essa estatística impactante revela uma desconexão chocante entre
           a abundância de alimentos e a persistência da fome em muitas partes do
           planeta.
         </p>
-        <video src="#"></video>
-        <h2>Soluções Inovadoras</h2>
-        <p>
+
+        <!-- Nossa Solução -->
+
+        <h2 class="home_h">Soluções Inovadoras</h2>
+        <p class="home_p">
           Uma plataforma revolucionária conecta produtos próximos ao vencimento
           com clientes interessados, reduzindo o desperdício e ajudando a
           combater a fome. Por meio dessa plataforma, os produtos são
@@ -47,15 +83,29 @@
           direcionada para apoiar organizações não governamentais que trabalham
           no combate à fome.
         </p>
-        <h2>Promoção da Segurança Alimentar</h2>
-        <p>
+
+        <!-- Video Youtube -->
+
+        <iframe
+          width="420"
+          height="345"
+          src="https://www.youtube.com/embed/jDpVRarF9UM"
+        ></iframe>
+
+        <!-- Promocoção da Segurança -->
+
+        <h2 class="home_h">Promoção da Segurança Alimentar</h2>
+        <p class="home_p">
           Essa iniciativa não apenas evita o descarte desnecessário de alimentos
           em perfeito estado de consumo, mas também permite que os consumidores
           conscientes façam escolhas éticas e sustentáveis, ajudando a promover
           a segurança alimentar e o apoio às comunidades mais vulneráveis.
         </p>
-        <h2>Abraçando Soluções Inovadoras</h2>
-        <p>
+
+        <!-- Soluções Inovadoras -->
+
+        <h2 class="home_h">Abraçando Soluções Inovadoras</h2>
+        <p class="home_p">
           É hora de abraçar essas soluções inovadoras, utilizando a tecnologia
           para criar uma rede de solidariedade e eficiência na luta contra o
           desperdício de alimentos. Juntos, podemos transformar a triste
@@ -63,51 +113,120 @@
           compra contribui para um mundo mais justo, sustentável e livre da
           fome.
         </p>
-        <h2>Por que investir em nós?</h2>
-        <ul>
-          <li>
-            Impacto social: Contribua para a meta da ODS 2 da ONU de erradicar a
-            fome e promover a agricultura sustentável.
-          </li>
-          <li>
-            Sustentabilidade: Reduza o desperdício de alimentos e promova
-            práticas mais conscientes em relação à produção e consumo.
-          </li>
-          <li>
-            Oportunidade de negócio: Participe de um mercado em crescimento,
-            alinhado às demandas dos consumidores preocupados com o meio
-            ambiente e com o orçamento.
-          </li>
-        </ul>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/watch?v=1-rzH1Ltn0Q"
-          frameborder="0"
-          allow="accelerometer ;autoplay; encrypted-media; gryoscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
-    </main>
-    <footer>
-        <h1>Empresas Parceiras</h1>
-        <div class="carrossel">
-          <div class="slide">
-            <a href="link_da_empresa1"><img src="imagem_empresa1.png" alt="Empresa 1"></a>
+
+        <!-- Motivos -->
+        <div class="cardsContainer">
+          <h2 class="cardsContainer_title">Por que investir em nós?</h2>
+          <div class="card">
+            <div class="card_front">
+              <h3>Impacto social</h3>
+            </div>
+            <div class="card_back">
+              <p>
+                Contribua para a meta da ODS 2 da ONU de erradicar a fome e
+                promover a agricultura sustentável.
+              </p>
+            </div>
           </div>
-          <div class="slide">
-            <a href="link_da_empresa2"><img src="imagem_empresa2.png" alt="Empresa 2"></a>
+          <div class="card">
+            <h3>Sustentabilidade</h3>
+            <div>
+              <p>
+                Reduza o desperdício de alimentos e promova práticas mais
+                conscientes em relação à produção e consumo.
+              </p>
+            </div>
           </div>
-          <div class="slide">
-            <a href="link_da_empresa3"><img src="imagem_empresa3.png" alt="Empresa 3"></a>
-          </div>
-          <div class="slide">
-            <a href="link_da_empresa4"><img src="imagem_empresa4.png" alt="Empresa 4"></a>
-          </div>
-          <div class="slide">
-            <a href="link_da_empresa5"><img src="./src/img/logo.png" alt="Empresa 5"></a>
+          <div class="card">
+            <h3>Oportunidade de negócio</h3>
+            <div>
+              <p>
+                Participe de um mercado em crescimento, alinhado às demandas dos
+                consumidores preocupados com o meio ambiente e com o orçamento.
+              </p>
+            </div>
           </div>
         </div>
-      </footer>      
+
+        <!-- Formulário -->
+
+        <div>
+          <h2 id="contato">Entre em contato conosco</h2>
+
+          <div class="forms">
+            <img src="./src/img/comida.jpg" id="comida" alt="Foto de Comida" />
+
+            <form>
+              <label for="nome">Primeiro Nome:</label>
+              <input type="text" id="nome" name="nome" />
+
+              <label for="sobrenome">Sobrenome:</label>
+              <input type="text" id="sobrenome" name="sobrenome" />
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" />
+
+              <label for="desc">Descrição:</label>
+              <textarea name="desc" id="desc" cols="54" rows="4"></textarea>
+
+              <input type="submit" id="enviar" value="Enviar" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Rodapé -->
+
+    <footer>
+      <!-- Empresas Parceiras da GS -->
+      <h1 id="parceiros">Empresas Parceiras</h1>
+
+      <div class="carrossel">
+        <!-- Ong Caça-Fome -->
+
+        <div class="slide">
+          <a href="https://www.cacafome.com.br" target="_blank">
+            <img src="./src/img/cacafome.png" alt="Empresa 1" />
+          </a>
+        </div>
+
+        <!-- FIAP -->
+
+        <div class="slide">
+          <a href="https://www.fiap.com.br" target="_blank">
+            <img src="./src/img/fiap.png" alt="Empresa 2" />
+          </a>
+        </div>
+
+        <!-- Kraft Heinz -->
+
+        <div class="slide">
+          <a href="https://www.kraftheinzcompany.com" target="_blank">
+            <img src="./src/img/kraftheinz.png" alt="Empresa 3" />
+          </a>
+        </div>
+
+        <!-- Microsoft -->
+
+        <div class="slide">
+          <a href="https://www.microsoft.com/pt-br/" target="_blank">
+            <img src="./src/img/microsoft.png" alt="Empresa 4" />
+          </a>
+        </div>
+
+        <!-- FoodSavers -->
+
+        <div class="slide">
+          <a href="link_da_empresa5"
+            ><img src="./src/img/logo.png" alt="Empresa 5" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Link para Código JS -->
+
+    <script src="./src/js/script.js"></script>
   </body>
 </html>
