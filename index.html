@@ -24,31 +24,45 @@
     <!-- Menu / Cabeçalho -->
 
     <header class="head">
-      <a href="index.html"
-        ><img src="./src/img/logo.png" class="head_logo" alt=""
+      <a href="index.html" class="head_logo"
+        ><img src="./src/img/logo.png" alt=""
       /></a>
       <nav class="head_nav">
         <ul class="head_ul">
           <li class="head_li">
-            <a href="index.html">Home</a>
+            <a class="head_a" href="index.html">Home</a>
           </li>
-          <li>
-            <a href="#" onclick="carregarPagina('./src/pages/fome.html')"
+          <li class="head_li">
+            <a
+              class="head_a"
+              href="#"
+              onclick="carregarPagina('./src/pages/fome.html')"
               >Fome</a
             >
           </li>
-          <li>
-            <a href="#" onclick="carregarPagina('./src/pages/alimentar.html')"
+          <li class="head_li">
+            <a
+              class="head_a"
+              href="#"
+              onclick="carregarPagina('./src/pages/alimentar.html')"
               >Insegurança Alimetar</a
             >
           </li>
-          <li>
-            <a href="#" onclick="carregarPagina('./src/pages/agricultura.html')"
+          <li class="head_li">
+            <a
+              class="head_a"
+              href="#"
+              onclick="carregarPagina('./src/pages/agricultura.html')"
               >Agricultura Sustentável</a
             >
           </li>
-          <li>
-            <a href="#" onclick="carregarPagina('./src/pages/mvp.html')">MVP</a>
+          <li class="head_li">
+            <a
+              class="head_a"
+              href="#"
+              onclick="carregarPagina('./src/pages/mvp.html')"
+              >MVP</a
+            >
           </li>
         </ul>
       </nav>
@@ -57,8 +71,6 @@
     <!-- Conteudo Principal -->
 
     <main id="conteudo">
-      <!-- A fome e o Desperdicio -->
-
       <div class="home">
         <h1 class="home_h">
           A fome e o desperdício de alimentos atingem proporções alarmantes em
@@ -71,9 +83,6 @@
           a abundância de alimentos e a persistência da fome em muitas partes do
           planeta.
         </p>
-
-        <!-- Nossa Solução -->
-
         <h2 class="home_h">Soluções Inovadoras</h2>
         <p class="home_p">
           Uma plataforma revolucionária conecta produtos próximos ao vencimento
@@ -83,17 +92,13 @@
           direcionada para apoiar organizações não governamentais que trabalham
           no combate à fome.
         </p>
-
-        <!-- Video Youtube -->
-
-        <iframe
-          width="420"
-          height="345"
-          src="https://www.youtube.com/embed/jDpVRarF9UM"
-        ></iframe>
-
-        <!-- Promocoção da Segurança -->
-
+        <div class="home_pitch">
+          <iframe
+            width="420"
+            height="345"
+            src="https://www.youtube.com/embed/jDpVRarF9UM"
+          ></iframe>
+        </div>
         <h2 class="home_h">Promoção da Segurança Alimentar</h2>
         <p class="home_p">
           Essa iniciativa não apenas evita o descarte desnecessário de alimentos
@@ -101,9 +106,6 @@
           conscientes façam escolhas éticas e sustentáveis, ajudando a promover
           a segurança alimentar e o apoio às comunidades mais vulneráveis.
         </p>
-
-        <!-- Soluções Inovadoras -->
-
         <h2 class="home_h">Abraçando Soluções Inovadoras</h2>
         <p class="home_p">
           É hora de abraçar essas soluções inovadoras, utilizando a tecnologia
@@ -179,44 +181,28 @@
     <!-- Rodapé -->
 
     <footer>
-      <!-- Empresas Parceiras da GS -->
       <h1 id="parceiros">Empresas Parceiras</h1>
-
       <div class="carrossel">
-        <!-- Ong Caça-Fome -->
-
         <div class="slide">
           <a href="https://www.cacafome.com.br" target="_blank">
             <img src="./src/img/cacafome.png" alt="Empresa 1" />
           </a>
         </div>
-
-        <!-- FIAP -->
-
         <div class="slide">
           <a href="https://www.fiap.com.br" target="_blank">
             <img src="./src/img/fiap.png" alt="Empresa 2" />
           </a>
         </div>
-
-        <!-- Kraft Heinz -->
-
         <div class="slide">
           <a href="https://www.kraftheinzcompany.com" target="_blank">
             <img src="./src/img/kraftheinz.png" alt="Empresa 3" />
           </a>
         </div>
-
-        <!-- Microsoft -->
-
         <div class="slide">
           <a href="https://www.microsoft.com/pt-br/" target="_blank">
             <img src="./src/img/microsoft.png" alt="Empresa 4" />
           </a>
         </div>
-
-        <!-- FoodSavers -->
-
         <div class="slide">
           <a href="link_da_empresa5"
             ><img src="./src/img/logo.png" alt="Empresa 5" />
