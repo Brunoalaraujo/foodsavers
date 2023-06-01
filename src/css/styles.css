@@ -60,14 +60,12 @@ body {
   text-decoration: none;
   color: var(--corPreta);
   transition: 300ms linear;
-  
 }
 
 .head_a:hover {
   text-decoration: none;
   color: var(--corBranca);
   transition: 300ms linear;
-  
 }
 
 .head_a--active {
@@ -109,11 +107,7 @@ body {
   justify-content: space-between;
   padding: 5%;
   justify-items: center;
-  
 }
-
-
-
 
 .cardsContainer_title {
   text-align: center;
@@ -170,7 +164,7 @@ body {
   transform: rotateY(180deg);
 }
 
-.card:hover .card_back{
+.card:hover .card_back {
   transform: rotateY(0deg);
 }
 
@@ -187,7 +181,7 @@ body {
   border-radius: 15px;
 }
 
-.contato_title{
+.contato_title {
   width: 100%;
   text-align: center;
   font-size: 2rem;
@@ -201,7 +195,7 @@ body {
   outline: 0;
 }
 
-.forms_img {
+.contato_img {
   margin-block: 5%;
   border-radius: 20px;
 }
@@ -253,46 +247,45 @@ body {
 
 /* Rodapé */
 
-footer {
+.footer {
   background-color: var(--corDestaqueClaro);
   padding: 20px;
 }
 
-.carrossel {
+.footer_parceiros {
+  text-align: center;
+  margin-bottom: 2%;
+  font-size: 2.5rem;
+  font-family: "Saira", sans-serif;
+}
+
+.footer_carrossel {
   display: flex;
   overflow: hidden;
 }
 
-.slide {
+.footer_slide {
+  display: flex;
   flex: 0 0 20%;
   padding: 10px;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.slide img {
-  border-radius: 0%;
+.footer_img {
   width: 60%;
   height: auto;
   transition: transform 0.3s;
 }
 
-.slide img:hover {
+.footer_img:hover {
   transform: scale(1.1);
-}
-
-#parceiros {
-  text-align: center;
-  margin-bottom: 2%;
-  font-size: 130%;
-  font-family: "Saira", sans-serif;
 }
 
 .quiz {
   text-align: center;
   width: 100%;
-  margin-top: 35px ;
+  margin-top: 35px;
 }
 
 .buttom {
@@ -301,9 +294,8 @@ footer {
   border-radius: 15px;
   padding: 2%;
   text-align: center;
-  margin-top:15px ;
+  margin-top: 15px;
   transition: 200ms linear;
-
 }
 
 .buttom:hover {
@@ -312,7 +304,7 @@ footer {
   border-radius: 15px;
   padding: 2%;
   text-align: center;
-  margin-top:15px ;
+  margin-top: 15px;
   transition: 200ms linear;
   cursor: pointer;
 }
