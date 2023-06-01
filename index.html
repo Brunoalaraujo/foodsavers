@@ -42,7 +42,7 @@
           </li>
           <li class="head_li">
             <a
-              class="head_a"
+              class="head_a head_a--red"
               href="#"
               onclick="carregarPagina('./src/pages/alimentar.html')"
               >Insegurança Alimetar</a
@@ -73,8 +73,8 @@
     <main id="conteudo">
       <div class="home">
         <h1 class="home_h">
-          A fome e o desperdício de alimentos atingem proporções alarmantes em
-          nosso mundo
+          A fome e o desperdício de alimentos atingem proporções <br />
+          alarmantes em nosso mundo
         </h1>
         <p class="home_p">
           A problemática se agrava quando percebemos que aproximadamente 33% de
@@ -94,10 +94,11 @@
         </p>
         <div class="home_pitch">
           <iframe
-            width="420"
+            width="720"
             height="345"
             src="https://www.youtube.com/embed/jDpVRarF9UM"
-          ></iframe>
+          >
+          </iframe>
         </div>
         <h2 class="home_h">Promoção da Segurança Alimentar</h2>
         <p class="home_p">
@@ -117,6 +118,7 @@
         </p>
 
         <!-- Motivos -->
+
         <div class="cardsContainer">
           <h2 class="cardsContainer_title">Por que investir em nós?</h2>
           <div class="card">
@@ -131,8 +133,10 @@
             </div>
           </div>
           <div class="card">
-            <h3>Sustentabilidade</h3>
-            <div>
+            <div class="card_front">
+              <h3>Sustentabilidade</h3>
+            </div>
+            <div class="card_back">
               <p>
                 Reduza o desperdício de alimentos e promova práticas mais
                 conscientes em relação à produção e consumo.
@@ -140,8 +144,10 @@
             </div>
           </div>
           <div class="card">
-            <h3>Oportunidade de negócio</h3>
-            <div>
+            <div class="card_front">
+              <h3>Oportunidade de negócio</h3>
+            </div>
+            <div class="card_back">
               <p>
                 Participe de um mercado em crescimento, alinhado às demandas dos
                 consumidores preocupados com o meio ambiente e com o orçamento.
@@ -152,26 +158,45 @@
 
         <!-- Formulário -->
 
-        <div>
-          <h2 id="contato">Entre em contato conosco</h2>
+        <div class="contato">
+          <h2 class="contato_title">Entre em contato conosco</h2>
 
-          <div class="forms">
-            <img src="./src/img/comida.jpg" id="comida" alt="Foto de Comida" />
+          <div class="contato_formsContainer">
+            <img
+              class="forms_img"
+              src="./src/img/comida.jpg"
+              alt="Foto de Comida"
+            />
+            <form class="contato_form">
+              <label class="contato_label" for="nome">Nome:</label>
+              <input class="contato_input" type="text" id="nome" name="nome" />
 
-            <form>
-              <label for="nome">Primeiro Nome:</label>
-              <input type="text" id="nome" name="nome" />
+              <label class="contato_label" for="sobrenome">Sobrenome:</label>
+              <input
+                class="contato_input"
+                type="text"
+                id="sobrenome"
+                name="sobrenome"
+              />
 
-              <label for="sobrenome">Sobrenome:</label>
-              <input type="text" id="sobrenome" name="sobrenome" />
+              <label class="contato_label" for="email">Email:</label>
+              <input
+                class="contato_input"
+                type="email"
+                id="email"
+                name="email"
+              />
 
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" />
+              <label class="contato_label" for="desc">Descrição:</label>
+              <textarea
+                class="contato_textarea"
+                name="desc"
+                id="desc"
+                cols="54"
+                rows="4"
+              ></textarea>
 
-              <label for="desc">Descrição:</label>
-              <textarea name="desc" id="desc" cols="54" rows="4"></textarea>
-
-              <input type="submit" id="enviar" value="Enviar" />
+              <button class="buttom" type="submit" id="enviar" value="Enviar">Enviar</button>
             </form>
           </div>
         </div>
