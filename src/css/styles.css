@@ -41,6 +41,10 @@ body {
   cursor: pointer;
 }
 
+.head_bntInactive {
+  display: none;
+}
+
 .head_nav {
   display: flex;
   align-items: center;
@@ -72,29 +76,53 @@ body {
   color: var(--corBranca);
 }
 
-/* teste */
-
 /* Estilos CSS para o menu dropdown */
 
 @media screen and (max-width: 870px) {
-  
-  .head_nav {
-    flex-direction: column;
+  .head_bntActive {
+    display: inline-block;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    height: 40px;
+    width: 40px;
+    margin-right: 4%;
+    align-self: center;
+    background-color: var(--corDestaqueClaro);
+    border-color: var(--corDestaque);
+    z-index: 2;
   }
-  
-  .head_ul.responsive {
-    position: relative;
+
+  .head {
+    justify-content: space-between;
   }
-  
-  .head_ul.responsive .head_li {
-    float: none;
+
+  .head_navActive {
     display: block;
-    text-align: left;
+    height: 300px;
+    padding-right: 5%;
+    font-size: 1.25rem;
+    background-color: var(--corDestaqueClaro);
+    z-index: 1;
+    animation: slideInLeft 0.5s forwards;
   }
-  
-  .head_ul.responsive .head_li a {
+
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  .head_navInactive {
+    display: none;
+  }
+
+  .head_ul {
+    flex-grow: 0;
     display: block;
-    text-align: left;
   }
 }
 
@@ -392,11 +420,11 @@ body {
   font-weight: bold;
 }
 
-.graficos{
+.graficos {
   display: flex;
 }
 
-.grafico{
+.grafico {
   text-align: center;
   font-size: 0.7rem;
 }

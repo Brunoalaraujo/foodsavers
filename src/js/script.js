@@ -10,31 +10,19 @@ function carregarPagina(url) {
   xhttp.send();
 }
 
-// Menu Hamburguer
+// Menu DropDown
+function openMenu(head_navInactive, head_navActive) {
+  var element = document.querySelector("#head_nav");
+  if (element.classList.contains(head_navInactive)) {
+    element.classList.remove(head_navInactive)
+    element.classList.add(head_navActive);
+  } else{
+    element.classList.remove(head_navActive)
+    element.classList.add(head_navInactive);
+  }
+}
 
-// function toggleMenu() {
-//   var menu = document.querySelector('.menu');
-//   menu.classList.toggle('show');
-// }
-
-// function checkWidth() {
-//   var menuToggle = document.querySelector('.menu-toggle');
-//   var menu = document.querySelector('.menu');
-  
-//   if (window.innerWidth <= 870) {
-//     menuToggle.style.display = 'block';
-//     menu.classList.remove('show');
-//   } else {
-//     menuToggle.style.display = 'none';
-//     menu.classList.add('show');
-//   }
-// }
-
-// window.addEventListener('resize', checkWidth);
-// checkWidth();
-
-
-// asdsa
+// Limpar Formulário
 function limpar() {
   document.getElementById("nome").value = "";
   document.getElementById("sobrenome").value = "";
